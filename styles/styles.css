@@ -24,6 +24,11 @@ p {
 	margin: 0 0 1.5em;
 }
 
+html {
+    scroll-behavior: smooth;
+	scroll-padding-top: 100px;
+}
+
 /* Elements
 --------------------------------------------- */
 section,
@@ -58,6 +63,7 @@ a:active {
 	position: sticky;
 	top: 0;
 	z-index: 2;
+	height: 100px;
 }
 
 .site-navigation {
@@ -125,10 +131,7 @@ a:active {
 	.page-header h1 {
 		font-size: 5rem;
 	}
-/* 
-	.page-header img {
-		height: 300px;
-	} */
+
 }
 
 /* Section About-------------------------------------------*/
@@ -212,14 +215,14 @@ a.project-link:focus {
 	outline: 1px dotted #008000;
 }
 
+.section-projects h2 {
+	font-size: 2rem;
+	text-align: center;
+}
 
 
 
 @media (min-width: 50em) {
-
-	.section-projects {
-		display: flex;
-	}
 
 	.projects-wrapper {
 		display: flex;
