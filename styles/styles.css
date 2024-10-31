@@ -1,0 +1,263 @@
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #282828;
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	margin: .5em 0;
+	font-size: 1.75rem;
+}
+
+p {
+	margin: 0 0 1.5em;
+}
+
+/* Elements
+--------------------------------------------- */
+section,
+aside {
+	padding: 0 1rem;
+}
+
+
+/* Links
+--------------------------------------------- */
+a,
+a:visited { 
+	color: #008000;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
+}
+
+/* a:focus {
+	outline: 1px dotted;
+} */
+
+
+/* Site Header--------------------------------- */
+.site-header {
+	background-color: #e9c9c9;
+	padding: 20px;	
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-menu {
+	list-style-type: none;
+	display: flex;
+	gap: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu li a {
+	display: flex;
+  	align-items: center;
+	text-decoration: none;
+	color: #362d2d;
+	font-weight: bold;
+	padding: 10px 15px;
+	font-size: 1.25rem;
+	border: 4px solid transparent;
+  }
+
+  .nav-menu li a:hover {
+	border-color: #362d2d;
+	border-width: 4px;
+	border-radius: 20%;
+  }
+
+
+/* Main*/
+
+/* Page Header---------------------------------------- */
+
+.page-header {
+	position: relative;
+}
+
+.page-header h1 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: translateY(-50%);
+	margin: 0;
+	font-size: 3rem;
+	color: #362d2d;
+	/* text-transform: uppercase; */
+	text-align: center;
+	text-shadow: 5px 5px 5px #E2C1D3;
+}
+
+.page-header img {
+	display: block;
+	object-fit: cover;
+	min-height: 25rem;	
+	
+}
+
+@media (min-width: 50em) {
+	.page-header h1 {
+		font-size: 5rem;
+	}
+/* 
+	.page-header img {
+		height: 300px;
+	} */
+}
+
+/* Section About-------------------------------------------*/
+
+.section-about {
+	max-width: 50rem;
+	margin: 3rem auto 3rem;
+}
+
+.section-about h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.section-about p {
+	font-size: 1.125rem;
+	line-height: 1.75;
+	text-align: justify;
+}
+
+@media (min-width: 50em) {
+
+	.nav-menu li a {
+		font-size: 2rem;
+	}
+
+	.section-about p {
+		font-size: 1.5rem;
+	}
+
+}
+
+/* Section Projects ---------------------------------*/
+.project {
+	max-width: 18.75rem;
+	margin: 2rem auto;
+	box-shadow: 5px 10px 10px #e9c9c9;
+	border-radius: 1.5rem;
+	overflow: hidden; /*for rounding the aricles*/
+}
+
+.project img {
+	border-radius: inherit; /*for rounding the aricles*/
+}
+
+.project-text {
+	padding: 1rem;
+	text-align: center;
+}
+
+.project-name {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.project-description {
+	font-size: 1.25rem;
+}
+
+.projects-title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+a.project-link {
+	display: inline-block;
+	padding: .5rem 1rem;
+	background-color: #362d2d;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 1rem;
+}
+
+a.project-link:hover,
+a.project-link:focus,
+a.project-link:active {
+	background-color: #843E61;
+}
+
+a.project-link:focus {
+	outline: 1px dotted #008000;
+}
+
+
+
+
+@media (min-width: 50em) {
+
+	.section-projects {
+		display: flex;
+	}
+
+	.projects-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.project {
+		margin: 1rem;
+	}
+
+}
+
+
+/* Footer------------------------------------------ */
+.site-footer {
+	display: flex;
+	/* centers horizontally */
+	justify-content: center; 
+	/* centers vertically */
+	align-items: center;
+	
+	background-color: #E9C9C9;
+	padding: 1rem;
+	height: 100px;
+	font-weight: bold;
+	color: #362d2d;
+}
+
+.site-footer p {
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
