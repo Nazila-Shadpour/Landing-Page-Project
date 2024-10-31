@@ -253,6 +253,26 @@ a.project-link:focus {
 	margin: 0;
 }
 
+/* media query for larger screens */
+@media (min-width: 75em) { 
+    body {
+        font-size: 1.25rem;
+    }
+
+    .project {
+        max-width: 20rem;
+    }
+}
+
+@media (min-width: 120em) { 
+    body {
+        font-size: 2rem;
+    }
+
+    .project {
+        max-width: 25rem;
+    }
+}
 
 
 
